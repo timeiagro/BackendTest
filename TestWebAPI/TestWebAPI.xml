@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestWebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:TestWebAPI.Controllers.BooksController">
+            <summary>
+            Configura a rota
+            </summary>
+        </member>
+        <member name="M:TestWebAPI.Controllers.BooksController.#ctor">
+            <summary>
+            Construtor da BooksController
+            </summary>
+        </member>
+        <member name="M:TestWebAPI.Controllers.BooksController.GetAll">
+            <summary>
+            Busca Todos os Livros.
+            </summary>
+            <returns>Todos os Livros</returns>
+        </member>
+        <member name="M:TestWebAPI.Controllers.BooksController.SortAscOrDescByPrice(System.Int32)">
+            <summary>
+            É preciso que o resultado possa ser ordenado pelo preço.(asc e desc)
+            </summary>
+            <param name="Option">Onde 1 significa uma ordenação Ascendente e 2 uma Descendente</param>
+            <returns>Lista Ordenada</returns>
+        </member>
+        <member name="M:TestWebAPI.Controllers.BooksController.GetBookBySpecifications(System.String)">
+            <summary>
+            buscar livros por suas especificações(autor, nome do livro ou outro atributo)
+            </summary>
+            <param name="Specifications">Especificação que está buscando</param>
+            <returns>Retorna uma livro com a especificação que foi pesquisada</returns>
+        </member>
+        <member name="M:TestWebAPI.Controllers.BooksController.GetPriceShipping(System.Int32)">
+            <summary>
+            Disponibilizar um método que calcule o valor do frete em 20% o valor do livro.
+            </summary>
+            <param name="idBook">Passar o Id do Livro</param>
+            <returns>Retorna o Valor do frete daquele livro</returns>
+        </member>
+        <member name="T:TestWebAPI.Models.BookSpecifications">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TestWebAPI.Models.BookSpecifications.GetBookBySpecifications(System.Collections.Generic.List{TestWebAPI.Models.Book},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="books"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TestWebAPI.Models.SortList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:TestWebAPI.Models.SortList.SortAscByPryce(System.Collections.Generic.List{TestWebAPI.Models.Book})">
+            <summary>
+            
+            </summary>
+            <param name="books"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestWebAPI.Models.SortList.SortDescByPryce(System.Collections.Generic.List{TestWebAPI.Models.Book})">
+            <summary>
+            
+            </summary>
+            <param name="books"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
